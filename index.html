@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Письмо для Пуши</title>
+  <link rel="icon" href="public/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/styles.css">
+</head>
+<body>
+  <div class="sky"></div>
+  <span class="heart">♥</span>
+  <span class="heart">♥</span>
+  <span class="heart">♥</span>
+  <span class="heart">♥</span>
+
+  <main class="scene" id="scene">
+    <div class="stage">
+      <div class="choices" id="choices">
+        <button class="btn btn-decline" id="decline" type="button">Отказаться</button>
+        <button class="btn btn-open" id="open-letter" type="button">Открыть письмо</button>
+      </div>
+
+      <div class="speech" id="speech">Привет, пуша, у меня для тебя есть письмо.</div>
+
+      <div class="cat pusheen" id="pusheen">
+        <img class="sprite" src="public/cats/pusheen.png" alt="Пушин">
+      </div>
+
+      <div class="cat tommy" id="tommy">
+        <img class="sprite" src="public/cats/tommy.png" alt="Томми">
+      </div>
+      <div class="ground"></div>
+    </div>
+  </main>
+
+  <div class="note" id="note">
+    <article class="paper">
+      <div class="tape"></div>
+
+      <section class="page" data-page="0">
+        <p class="hand">Мой любимый кот Пушин, мне очень-очень повезло что вот уже почти два года назад мне посчастливилось встретить тебя. Каждый день я радуюсь что это случилось и не могу себе даже представить как бы я жил без тебя сейчас. Я не хочу это представлять. Мне очень приятно осознавать, что у меня всегда есть человек на которого я могу положиться, с которым я всегда чувствую себя хорошо и уютно, с которым я обожаю засыпать, просыпаться, проводить каждую свободную минутку и с которым я по-настоящему счастлив. Я безумно сильно тебя люблю и хочу любить тебя всю жизнь❤️</p>
+        <div class="actions">
+          <button class="btn btn-next" id="next" type="button">Листать дальше</button>
+        </div>
+      </section>
+
+      <section class="page" data-page="1" hidden>
+        <p class="hand ask">Этот день я хочу отметить с тобой красиво, и прежде всего я хочу спросить тебя, Ты пойдешь со мной на свидание?</p>
+        <div class="actions">
+          <button class="btn btn-yes" id="yes-date" type="button">Да</button>
+          <button class="btn btn-no" id="no-date" type="button">Нет</button>
+          <button class="btn btn-back" type="button" data-back>Назад</button>
+        </div>
+      </section>
+
+      <section class="page" data-page="2" hidden>
+        <p class="hand">Дорогая Катя, я приглашаю тебя отметить наш день 13 ноября 2026 года в 20:30 в Ресторане Chez Céline, где тебя будет ждать красивая обстановка, живая музыка и симпатичный парень в рубашке. С нетерпением буду ждать ужина с тобой! Ты согласна?</p>
+        <div class="actions">
+          <button class="btn btn-yes" id="yes-place" type="button">Да</button>
+          <button class="btn btn-no" id="no-place" type="button">Нет</button>
+          <button class="btn btn-back" type="button" data-back>Назад</button>
+        </div>
+      </section>
+
+      <section class="page" data-page="3" hidden>
+        <form id="plans">
+          <p class="hand">Я хочу уточнить у тебя кое что, знаешь ли ты во что тебе нарядиться или нам нужно подумать об этом и посмотреть сегодня и завтра вместе?</p>
+          <textarea id="outfit" name="outfit" aria-label="Ответ про наряд"></textarea>
+          <label class="q" for="wishes">Может быть есть какие-то пожелания еще или вопросы?</label>
+          <textarea id="wishes" name="wishes"></textarea>
+          <div class="actions">
+            <button class="btn btn-send" type="submit">Отправить</button>
+            <button class="btn btn-back" type="button" data-back>Назад</button>
+          </div>
+        </form>
+      </section>
+    </article>
+  </div>
+
+  <div class="nag" id="nag">
+    <div class="nag-card">
+      <p id="nag-text"></p>
+    </div>
+  </div>
+
+  <div class="love" id="love">
+    <div class="love-card">
+      <p>Я тебя очень сильно люблю❤️ С нетерпением жду нашего вечера, кот!<span class="sign">Саша</span></p>
+    </div>
+  </div>
+
+  <script src="public/main.js"></script>
+</body>
+</html>
+
